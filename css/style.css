@@ -27,8 +27,36 @@ Breakpoints
 }
 
 
-/* --------------- COLORS --------------- */
+/* --------------- UTILITIES --------------- */
+/* ----- FLEX ----- */
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- COLUMNS ---------- */
+.col-1 {
+  width: calc((100% / 3) - 15px);
+
+  /* debug */
+  padding: 2rem 1rem;
+  background-color: var(--color-secondary-l);
+}
+
+.col-2 {
+  width: calc((100% / 3) * 2 - 15px);
+
+  /* debug */
+  padding: 2rem 1rem;
+  background-color: var(--color-secondary-l);
+}
+
+/* ---------- COLORS ---------- */
 /* Background */
 .bg-primary {
   background-color: var(--color-primary);
@@ -48,11 +76,30 @@ Breakpoints
 }
 
 
+/* --------------- CONTENT --------------- */
+header .flex-row {
+  justify-content: space-between;
+}
+
+#jumbotron .flex-row {
+  gap: 15px;
+}
+
+footer {
+  background-color: rgb(25, 25, 25);
+}
+
+
 /* --------------- DEBUG --------------- */
 section {
   padding: 3rem 0;
 }
 
-footer {
-  background-color: rgb(25, 25, 25);
+#description .flex-col {
+  align-items: center;
+}
+
+#description .col {
+  padding: 20rem 10rem;
+  border: 2px dashed red;
 }
