@@ -1,0 +1,58 @@
+/* 
+Breakpoints
+  576px - mobile
+  768px - tablet
+  992px - desktop
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #9792e4;
+  --color-secondary: #0084fd;
+  --color-secondary-l: #b5ddff;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+
+  /* debug */
+  padding: 2rem 1rem;
+  border: 2px dashed red;
+}
+
+
+/* --------------- COLORS --------------- */
+
+/* Background */
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-secondary-l {
+  background-color: var(--color-secondary-l);
+}
+
+/* Font */
+.font-secondary-l {
+  color: var(--color-secondary-l);
+}
+
+
+/* --------------- DEBUG --------------- */
+section {
+  padding: 3rem 0;
+}
+
+footer {
+  background-color: rgb(25, 25, 25);
+}
