@@ -26,6 +26,24 @@ Breakpoints
   border: 2px dashed red;
 }
 
+.container-small {
+  width: 720px;
+  margin: 0 auto;
+
+  /* debug */
+  padding: 2rem 1rem;
+  border: 2px dashed red;
+}
+
+.container-smaller {
+  width: 520px;
+  margin: 0 auto;
+
+  /* debug */
+  padding: 2rem 1rem;
+  border: 2px dashed red;
+}
+
 
 /* --------------- UTILITIES --------------- */
 /* ----- FLEX ----- */
@@ -45,7 +63,7 @@ Breakpoints
 
   /* debug */
   padding: 2rem 1rem;
-  background-color: var(--color-secondary-l);
+  border: 2px dashed red;
 }
 
 .col-2 {
@@ -53,7 +71,7 @@ Breakpoints
 
   /* debug */
   padding: 2rem 1rem;
-  background-color: var(--color-secondary-l);
+  border: 2px dashed red;
 }
 
 /* ---------- COLORS ---------- */
@@ -85,6 +103,14 @@ header .flex-row {
   gap: 15px;
 }
 
+#benefits .flex-row {
+  gap: 15px;
+}
+
+#about .flex-row {
+  gap: 15px;
+}
+
 footer {
   background-color: rgb(25, 25, 25);
 }
@@ -95,11 +121,25 @@ section {
   padding: 3rem 0;
 }
 
-#description .flex-col {
+.flex-col {
   align-items: center;
 }
 
 #description .col {
+  padding: 20rem 10rem;
+  border: 2px dashed red;
+}
+
+#partners .flex-col {
+  gap: 15px;
+}
+
+#partners .flex-row {
+  padding: 5rem 2rem;
+  border: 2px dashed red;
+}
+
+#about .col {
   padding: 20rem 10rem;
   border: 2px dashed red;
 }
