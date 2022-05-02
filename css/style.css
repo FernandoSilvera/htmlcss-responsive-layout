@@ -27,7 +27,7 @@ Breakpoints
 }
 
 .container-small {
-  width: 720px;
+  width: 75%;
   margin: 0 auto;
 
   /* debug */
@@ -36,7 +36,7 @@ Breakpoints
 }
 
 .container-smaller {
-  width: 520px;
+  width: 75%;
   margin: 0 auto;
 
   /* debug */
@@ -50,11 +50,16 @@ Breakpoints
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .flex-col {
   display: flex;
   flex-direction: column;
+}
+
+.just-center {
+  justify-content: center;
 }
 
 /* ---------- COLUMNS ---------- */
@@ -68,6 +73,14 @@ Breakpoints
 
 .col-2 {
   width: calc((100% / 3) * 2 - 15px);
+
+  /* debug */
+  padding: 2rem 1rem;
+  border: 2px dashed red;
+}
+
+.col-3 {
+  width: 100%;
 
   /* debug */
   padding: 2rem 1rem;
@@ -103,8 +116,20 @@ header .flex-row {
   gap: 15px;
 }
 
+#jumbotron .col {
+  background-color: var(--color-secondary-l);
+}
+
+#partners .flex-row {
+  gap: 15px;
+}
+
 #benefits .flex-row {
   gap: 15px;
+}
+
+#benefits .col {
+  background-color: white;
 }
 
 #about .flex-row {
@@ -113,6 +138,57 @@ header .flex-row {
 
 footer {
   background-color: rgb(25, 25, 25);
+}
+
+
+/* --------------- QUERIES --------------- */
+@media screen and (max-width: 992px) {
+  .container {
+    width: 720px;
+    margin: 0 auto;
+  
+    /* debug */
+    padding: 2rem 1rem;
+    border: 2px dashed red;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 520px;
+    margin: 0 auto;
+  
+    /* debug */
+    padding: 2rem 1rem;
+    border: 2px dashed red;
+  }
+
+  .m-basis-half {
+    flex-basis: calc(50% - 15px);
+  }
+
+  .m-basis-full {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  
+    /* debug */
+    padding: 2rem 1rem;
+    border: 2px dashed red;
+  }
+
+  .s-basis-half {
+    flex-basis: 50%;
+  }
+
+  .s-basis-full {
+    flex-basis: 100%;
+  }
 }
 
 
@@ -132,11 +208,6 @@ section {
 
 #partners .flex-col {
   gap: 15px;
-}
-
-#partners .flex-row {
-  padding: 5rem 2rem;
-  border: 2px dashed red;
 }
 
 #about .col {
